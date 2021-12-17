@@ -1,0 +1,10 @@
+<div class="container">
+  <div> <h2>Ajouter un Utilisateur :</h2>
+</div>
+
+<form > <div class="col-sm-2 col-md-2 col-lg-2">
+  <label >Nom Utilisateur</label>
+  <input type="text" [(ngModel)]="user.nom" name="nom" class="form-control"> </div> <div class="col-sm-4 col-md-4 col-lg-4" >
+  <label >Cin</label> <input type="text"[(ngModel)]= "user.cin" name="cin" class="form-control"> </div> <div class="col-sm-2 col-md-2 col-lg-2">
+  <label >Adresse Email</label> <input type="email" [(ngModel)]= "user.email" name="prixProduit" class="form-control"> </div> <div class="col-sm-4 col-md-4 col-lg-4">
+  <button type="submit" (click)="addUser()" class="btn btn-success">Ajouter</button> </div> </form> </div>

@@ -1,0 +1,36 @@
+ <mat-grid-list cols="2" rowHeight="2:1">
+          <mat-grid-tile>
+            <div fxLayout="column"
+            fxLayoutGap="10px">
+            <div fxFlex>
+            </div>
+            <div fxFlex>
+            <table>
+            <thead>
+              <tr>
+                <th>Cin</th>
+                <th>Nom</th>
+                <th>DateNaissance</th>
+                <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let user of users">
+                <td>{{ user.cin }}</td>
+                <td>{{ user.nom }}  </td>
+                <td>{{ user.date_naiss }}
+                <td>{{ user.email }} </td>
+                <td>
+                  <button mat-raised-buttoncolor="primary"> Modifier</button>
+                  <button mat-raised-button> Supprimer</button>
+               </td>
+              </tr>
+              </tbody>
+              </table>
+              </div>
+              </div>
+          </mat-grid-tile>
+          <mat-grid-tile>
+
+          </mat-grid-tile>
+</mat-grid-list>
